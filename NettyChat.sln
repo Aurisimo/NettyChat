@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NettyChat.Server", "NettyChat.Server\NettyChat.Server.csproj", "{0BE12AE5-D860-4272-A5F6-DB081B8C9780}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NettyChat.Client", "NettyChat.Client\NettyChat.Client.csproj", "{D440C5E1-B3F3-417C-AE5D-7379F6E734FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NettyChat.Common", "NettyChat.Common\NettyChat.Common.csproj", "{878AFFBE-63FA-4386-97D3-DA57A3F586FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BE12AE5-D860-4272-A5F6-DB081B8C9780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE12AE5-D860-4272-A5F6-DB081B8C9780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE12AE5-D860-4272-A5F6-DB081B8C9780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE12AE5-D860-4272-A5F6-DB081B8C9780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D440C5E1-B3F3-417C-AE5D-7379F6E734FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D440C5E1-B3F3-417C-AE5D-7379F6E734FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D440C5E1-B3F3-417C-AE5D-7379F6E734FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D440C5E1-B3F3-417C-AE5D-7379F6E734FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878AFFBE-63FA-4386-97D3-DA57A3F586FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878AFFBE-63FA-4386-97D3-DA57A3F586FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878AFFBE-63FA-4386-97D3-DA57A3F586FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878AFFBE-63FA-4386-97D3-DA57A3F586FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C49AA97D-BF24-4D19-8DED-C10196BB4243}
+	EndGlobalSection
+EndGlobal

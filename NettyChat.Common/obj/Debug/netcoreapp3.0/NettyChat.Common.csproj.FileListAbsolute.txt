@@ -1,0 +1,8 @@
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\NettyChat.Common.deps.json
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\NettyChat.Common.dll
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.AssemblyInfoInputs.cache
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.AssemblyInfo.cs
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\NettyChat.Common.pdb
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.dll
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.pdb
+C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.csprojAssemblyReference.cache
