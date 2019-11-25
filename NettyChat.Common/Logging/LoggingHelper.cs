@@ -1,9 +1,7 @@
 ﻿using DotNetty.Common.Internal.Logging;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
-using System;
 
-namespace NettyChat.Common
+namespace NettyChat.Common.Logging
 {
     public class LoggingHelper
     {

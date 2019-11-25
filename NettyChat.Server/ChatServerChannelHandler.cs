@@ -1,20 +1,42 @@
 ﻿using System;
 using DotNetty.Transport.Channels;
+using DotNetty.Transport.Channels.Groups;
 
 namespace NettyChat.Server
 {
     public class ChatServerChannelHandler : SimpleChannelInboundHandler<string>
     {
-        protected override void ChannelRead0(IChannelHandlerContext ctx, string msg)
+        private static volatile IChannelGroup _group;
+        
+        protected override void ChannelRead0(IChannelHandlerContext context, string msg)
         {
-            Console.WriteLine(msg);
+            context.WriteAndFlushAsync($"[you] {msg}\n");
+            _group.WriteAndFlushAsync($"[{context.Channel.RemoteAddress}] {msg}", new ExcludeChannelMatcher(context.Channel.Id));
+            
+            if (msg.Equals("quit", StringComparison.InvariantCultureIgnoreCase)) context.Channel.CloseAsync();
         }
 
         public override void ChannelActive(IChannelHandlerContext context)
         {
-            base.ChannelActive(context);
+            if (_group == null)
+            {
+                lock (this)
+                {
+                    if (_group == null)
+                    {
+                        _group = new DefaultChannelGroup(context.Executor);
+                    }
+                }
+            }
 
-            Console.WriteLine($"New client (Id: {context.Channel.Id}, remote address: {context.Channel.RemoteAddress}) connected");
+            _group.Add(context.Channel);
+        }
+
+        public override void ExceptionCaught(IChannelHandlerContext context, Exception exception)
+        {
+            Console.WriteLine(exception.Message);
+            Console.WriteLine(exception.StackTrace);
+            context.CloseAsync();
         }
     }
 }

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using DotNetty.Handlers.Logging;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
-using DotNetty.Codecs.Base64;
+using NettyChat.Common.Logging;
+using System;
 using System.Net;
-using DotNetty.Codecs;
-using NettyChat.Common;
-using DotNetty.Handlers.Logging;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace NettyChat.Client
 {
@@ -30,18 +27,14 @@ namespace NettyChat.Client
                     {
                         var pipeline = channel.Pipeline;
 
-                        pipeline.AddLast(new LoggingHandler(LogLevel.DEBUG));
+                        pipeline.AddLast(new LoggingHandler((LogLevel.INFO)));
+                        
+                        pipeline.AddLast(new Common.Codecs.Base64Encoder());
+                        pipeline.AddLast(new Common.Codecs.Base64Decoder());
 
-                        pipeline.AddLast(new DelimiterBasedFrameDecoder(80,
-                            //Delimiters.NullDelimiter()
-                            Delimiters.LineDelimiter()
-                            ));
+                        pipeline.AddLast(new Common.Codecs.StringEncoder());
+                        pipeline.AddLast(new Common.Codecs.StringDecoder());
 
-                        pipeline.AddLast(new Base64Decoder());
-                        pipeline.AddLast(new Base64Encoder());
-
-                        pipeline.AddLast(new StringEncoder());
-                        pipeline.AddLast(new StringDecoder());
                         pipeline.AddLast(new ChatClientChannelHandler());
                     }));
 
@@ -50,7 +43,7 @@ namespace NettyChat.Client
                 while (true)
                 {
                     var input = Console.ReadLine();
-                    if (input == "quit") break;
+                    if (input.Equals("quit", StringComparison.InvariantCultureIgnoreCase)) break;
                     else if (!string.IsNullOrEmpty(input))
                     {
                         await channel.WriteAndFlushAsync(input + "\r\n");

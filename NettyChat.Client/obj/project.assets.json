@@ -1739,7 +1739,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "DotNetty.Codecs": "0.6.0",
           "DotNetty.Common": "0.6.0",
+          "DotNetty.Transport": "0.6.0",
           "Microsoft.Extensions.Logging.Console": "3.0.1"
         },
         "compile": {
@@ -5888,19 +5890,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lape_\\.nuget\\packages\\": {}
+    "C:\\Users\\lape.au\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
+      "projectUniqueName": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
       "projectName": "NettyChat.Client",
-      "projectPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
-      "packagesPath": "C:\\Users\\lape_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\obj\\",
+      "projectPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
+      "packagesPath": "C:\\Users\\lape.au\\.nuget\\packages\\",
+      "outputPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lape_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lape.au\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5913,8 +5915,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj": {
-              "projectPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj"
+            "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj": {
+              "projectPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj"
             }
           }
         }

@@ -9,5 +9,12 @@ namespace NettyChat.Client
         {
             Console.WriteLine(msg);
         }
+
+        public override void ExceptionCaught(IChannelHandlerContext context, Exception exception)
+        {
+            Console.WriteLine(exception.Message);
+            Console.WriteLine(exception.StackTrace);
+            context.CloseAsync();
+        }
     }
 }

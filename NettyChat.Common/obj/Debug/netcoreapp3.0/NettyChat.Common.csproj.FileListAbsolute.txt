@@ -6,3 +6,11 @@ C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\N
 C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.dll
 C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.pdb
 C:\Users\lape_\source\repos\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.csprojAssemblyReference.cache
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\NettyChat.Common.deps.json
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\NettyChat.Common.dll
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\bin\Debug\netcoreapp3.0\NettyChat.Common.pdb
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.csprojAssemblyReference.cache
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.AssemblyInfoInputs.cache
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.AssemblyInfo.cs
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.dll
+C:\Workdir\Sandbox\NettyChat\NettyChat.Common\obj\Debug\netcoreapp3.0\NettyChat.Common.pdb

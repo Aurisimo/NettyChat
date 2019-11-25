@@ -1065,7 +1065,9 @@
       },
       "NettyChat.Common/1.0.0": {
         "dependencies": {
+          "DotNetty.Codecs": "0.6.0",
           "DotNetty.Common": "0.6.0",
+          "DotNetty.Transport": "0.6.0",
           "Microsoft.Extensions.Logging.Console": "3.0.1"
         },
         "runtime": {

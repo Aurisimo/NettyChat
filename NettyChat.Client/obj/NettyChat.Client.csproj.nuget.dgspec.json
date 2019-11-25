@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj": {}
+    "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj": {
+    "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
+        "projectUniqueName": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
         "projectName": "NettyChat.Client",
-        "projectPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
-        "packagesPath": "C:\\Users\\lape_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Client\\obj\\",
+        "projectPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\NettyChat.Client.csproj",
+        "packagesPath": "C:\\Users\\lape.au\\.nuget\\packages\\",
+        "outputPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lape_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lape.au\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj": {
-                "projectPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj"
+              "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj": {
+                "projectPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj"
               }
             }
           }
@@ -74,17 +74,17 @@
         }
       }
     },
-    "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj": {
+    "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj",
+        "projectUniqueName": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj",
         "projectName": "NettyChat.Common",
-        "projectPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj",
-        "packagesPath": "C:\\Users\\lape_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lape_\\source\\repos\\NettyChat\\NettyChat.Common\\obj\\",
+        "projectPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\NettyChat.Common.csproj",
+        "packagesPath": "C:\\Users\\lape.au\\.nuget\\packages\\",
+        "outputPath": "C:\\Workdir\\Sandbox\\NettyChat\\NettyChat.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lape_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lape.au\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,7 +108,15 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "DotNetty.Codecs": {
+              "target": "Package",
+              "version": "[0.6.0, )"
+            },
             "DotNetty.Common": {
+              "target": "Package",
+              "version": "[0.6.0, )"
+            },
+            "DotNetty.Transport": {
               "target": "Package",
               "version": "[0.6.0, )"
             },

@@ -1,18 +1,15 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using DotNetty.Handlers.Logging;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
-using DotNetty.Handlers.Logging;
-using DotNetty.Codecs.Base64;
-using DotNetty.Codecs;
-using NettyChat.Common;
+using NettyChat.Common.Logging;
+using System;
+using System.Threading.Tasks;
 
 namespace NettyChat.Server
 {
     class Program
     {
-        
         private static async Task StartServerAsync()
         {
             LoggingHelper.SetConsoleLogger();
@@ -26,20 +23,17 @@ namespace NettyChat.Server
                 server
                     .Group(parentGroup, childGroup)
                     .Channel<TcpServerSocketChannel>()
-                    .Handler(new LoggingHandler(LogLevel.DEBUG))
+                    .Handler(new LoggingHandler(LogLevel.INFO))
                     .ChildHandler(new ActionChannelInitializer<ISocketChannel>(channel =>
                     {
                         var pipeline = channel.Pipeline;
-                        pipeline.AddLast(new DelimiterBasedFrameDecoder(80, 
-                            //Delimiters.NullDelimiter()
-                            Delimiters.LineDelimiter()
-                            ));
 
-                        pipeline.AddLast(new Base64Decoder());
-                        pipeline.AddLast(new Base64Encoder());
-                        
-                        pipeline.AddLast(new StringEncoder());
-                        pipeline.AddLast(new StringDecoder());
+                        pipeline.AddLast(new Common.Codecs.Base64Encoder());
+                        pipeline.AddLast(new Common.Codecs.Base64Decoder());
+
+                        pipeline.AddLast(new Common.Codecs.StringEncoder());
+                        pipeline.AddLast(new Common.Codecs.StringDecoder());
+ 
                         pipeline.AddLast(new ChatServerChannelHandler());
                     }));
 
@@ -48,7 +42,7 @@ namespace NettyChat.Server
                 while (true)
                 {
                     var input = Console.ReadLine();
-                    if (input == "quit") break;
+                    if (input.Equals("quit", StringComparison.InvariantCultureIgnoreCase)) break;
                 }
 
                 await channel.CloseAsync();
